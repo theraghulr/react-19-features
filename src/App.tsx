@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import FetchTodo from './components/FetchTodo'
 
 const App = () => {
   return (
-    <div>
+    <Suspense fallback={<div>Loading todo...</div>}>
       <FetchTodo />
-    </div>
+    </Suspense>
   )
 }
 
