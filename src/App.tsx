@@ -1,11 +1,15 @@
 import React, { Suspense } from 'react'
 import FetchTodo from './components/FetchTodo'
+import Count from './components/Count';
 
 const App = () => {
   return (
-    <Suspense fallback={<div>Loading todo...</div>}>
-      <FetchTodo />
-    </Suspense>
+    <div>
+      <Count />
+    </div>
+    // <Suspense fallback={<div>Loading todo...</div>}>
+    //   <FetchTodo />
+    // </Suspense>
   )
 }
 
